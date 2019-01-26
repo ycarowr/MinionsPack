@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cda3401c3d23ec43844bddedb862684, type: 3}
+  m_Name: ClassThief
+  m_EditorClassIdentifier: 
+  NameLocalized: 73
+  Effect: {fileID: 11400000, guid: 4f0092704656ed4498b474df7aebe454, type: 2}
+  Animation: {fileID: 1230621160066536, guid: df928024039112e4abe3e07ec73aa228, type: 2}
+  BackgroundColorOnPool: {fileID: 11400000, guid: 9d27a35f6339f8e4ebb06a6fcac91d64,
+    type: 2}
+  Background: {fileID: 21300000, guid: a180ecd6f1a29e34694ec3144f23e09d, type: 3}
+  Id: 10
+  DefaultPower: -2
+  SoundOnPlay: {fileID: 8300000, guid: 10f0307536fb00e40a1d7d6b007a7ddb, type: 3}
+  TimeUntilToDie: -1
+  SpawnModelAnimation: {fileID: 11400000, guid: 64aeee851d0bbdb4dadbc98be8d2794e,
+    type: 2}
+  m_Type: 44
+  m_Flavor: 119

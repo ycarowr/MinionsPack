@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cda3401c3d23ec43844bddedb862684, type: 3}
+  m_Name: ClassWizardDiagonal
+  m_EditorClassIdentifier: 
+  NameLocalized: 74
+  Effect: {fileID: 11400000, guid: 366b86957d76f4c409643093df18ec35, type: 2}
+  Animation: {fileID: 1542417686417092, guid: 5f46c1fbb20e0d34ba31e82d8e025098, type: 2}
+  BackgroundColorOnPool: {fileID: 11400000, guid: 9d27a35f6339f8e4ebb06a6fcac91d64,
+    type: 2}
+  Background: {fileID: 21300000, guid: a180ecd6f1a29e34694ec3144f23e09d, type: 3}
+  Id: 11
+  DefaultPower: 4
+  SoundOnPlay: {fileID: 8300000, guid: 10f0307536fb00e40a1d7d6b007a7ddb, type: 3}
+  TimeUntilToDie: -1
+  SpawnModelAnimation: {fileID: 11400000, guid: 1c648a7350ff5504d93a43038eef6102,
+    type: 2}
+  m_Type: 44
+  m_Flavor: 120

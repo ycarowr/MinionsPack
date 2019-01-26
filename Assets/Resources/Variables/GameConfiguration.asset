@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b2eb14c6f413ec498bb9746ae740821, type: 3}
+  m_Name: GameConfiguration
+  m_EditorClassIdentifier: 
+  m_Tiles:
+  - {fileID: 11400000, guid: a151c8f09dd14db4c9c617baf95ad54b, type: 2}
+  - {fileID: 11400000, guid: fb8d2fa97eedbbc4d850b3d8b84a2a0f, type: 2}
+  - {fileID: 11400000, guid: 337505f27cc11ea4a8318db9e9393dc6, type: 2}
+  - {fileID: 11400000, guid: 9a0cacae699ae9b4d99fd1efd7bad43a, type: 2}
+  - {fileID: 11400000, guid: 000b70177027af4459e1550a576589ae, type: 2}
+  - {fileID: 11400000, guid: 7773c875e0441a243997cef6b28b94d0, type: 2}
+  - {fileID: 11400000, guid: 8e269be76c873d0429badc49ed569432, type: 2}
+  - {fileID: 11400000, guid: 1813372e86fb7834787455ea88e586cb, type: 2}
+  - {fileID: 11400000, guid: a097fd1b727281440bee98d4da394466, type: 2}
+  - {fileID: 11400000, guid: 62b2f0f489fc55e4ca872398bf47647a, type: 2}
+  - {fileID: 11400000, guid: b888f33828f8a4a488270687e100cab7, type: 2}
+  - {fileID: 11400000, guid: ea7dd454ee62d044e80f578051ec3f0b, type: 2}
+  - {fileID: 11400000, guid: 6014c2977156b6f419b62257313b5b4a, type: 2}
+  - {fileID: 11400000, guid: a335240b2c72deb4488ebca6c7237214, type: 2}
+  - {fileID: 11400000, guid: 8b10ae732e572b54b8729da5695b3b95, type: 2}
+  - {fileID: 11400000, guid: 2914dd438bd271d439e985eb0f7e3c18, type: 2}
+  m_BoardMultiplayer: {fileID: 11400000, guid: 6d170864a83e6944e8e439c61d273e91, type: 2}
+  m_PoolTileMultiplayer: {fileID: 11400000, guid: 153da201bc6cd9e4c97c97a7b9c3ecdf,
+    type: 2}
+  TotalDifferenceToWinMultiplayer: {fileID: 11400000, guid: c344cf451c409c94f955f084584bd09d,
+    type: 2}
+  m_BoardCampaign: {fileID: 11400000, guid: f92e1586b81fe264a96314a92bd6eeaf, type: 2}
+  m_PoolTileCampaign: {fileID: 11400000, guid: 153da201bc6cd9e4c97c97a7b9c3ecdf, type: 2}
+  TotalDifferenceToWinCampaign: {fileID: 11400000, guid: f658d79f6432931488ec70d94d5ab2b7,
+    type: 2}
+  m_BoardRanked: {fileID: 11400000, guid: 6d170864a83e6944e8e439c61d273e91, type: 2}
+  m_PoolTileRanked: {fileID: 11400000, guid: 153da201bc6cd9e4c97c97a7b9c3ecdf, type: 2}
+  TotalDifferenceToWinRanked: {fileID: 11400000, guid: 3ae448f6095b4f74fbf6f39e888279f7,
+    type: 2}
+  m_BoardRandom:
+  - {fileID: 11400000, guid: 6d170864a83e6944e8e439c61d273e91, type: 2}
+  - {fileID: 11400000, guid: f92e1586b81fe264a96314a92bd6eeaf, type: 2}
+  m_PoolTileRandom: {fileID: 11400000, guid: 153da201bc6cd9e4c97c97a7b9c3ecdf, type: 2}
+  TotalDifferenceToWinRandom: {fileID: 11400000, guid: b4852b253da422942b6409bc3e1d3530,
+    type: 2}
+  TileModels:
+  - {fileID: 11400000, guid: a151c8f09dd14db4c9c617baf95ad54b, type: 2}
+  - {fileID: 11400000, guid: fb8d2fa97eedbbc4d850b3d8b84a2a0f, type: 2}
+  - {fileID: 11400000, guid: 337505f27cc11ea4a8318db9e9393dc6, type: 2}
+  - {fileID: 11400000, guid: 9a0cacae699ae9b4d99fd1efd7bad43a, type: 2}
+  - {fileID: 11400000, guid: 000b70177027af4459e1550a576589ae, type: 2}
+  - {fileID: 11400000, guid: 7773c875e0441a243997cef6b28b94d0, type: 2}
+  - {fileID: 11400000, guid: 8e269be76c873d0429badc49ed569432, type: 2}
+  - {fileID: 11400000, guid: 1813372e86fb7834787455ea88e586cb, type: 2}
+  - {fileID: 11400000, guid: a097fd1b727281440bee98d4da394466, type: 2}
+  - {fileID: 11400000, guid: 62b2f0f489fc55e4ca872398bf47647a, type: 2}
+  - {fileID: 11400000, guid: b888f33828f8a4a488270687e100cab7, type: 2}
+  - {fileID: 11400000, guid: ea7dd454ee62d044e80f578051ec3f0b, type: 2}
+  - {fileID: 11400000, guid: 6014c2977156b6f419b62257313b5b4a, type: 2}
+  - {fileID: 11400000, guid: a335240b2c72deb4488ebca6c7237214, type: 2}
+  - {fileID: 11400000, guid: 8b10ae732e572b54b8729da5695b3b95, type: 2}
+  - {fileID: 11400000, guid: 2914dd438bd271d439e985eb0f7e3c18, type: 2}
+  BoardModel: {fileID: 11400000, guid: f92e1586b81fe264a96314a92bd6eeaf, type: 2}
+  PoolTileModel: {fileID: 11400000, guid: 153da201bc6cd9e4c97c97a7b9c3ecdf, type: 2}
+  PlayerWonAMatch: 1
+  TotalDifferenceToWin: {fileID: 11400000, guid: 5c048e09ac27af44085330dee53cfc0f,
+    type: 2}

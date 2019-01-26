@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cda3401c3d23ec43844bddedb862684, type: 3}
+  m_Name: ClassPaladin
+  m_EditorClassIdentifier: 
+  NameLocalized: 71
+  Effect: {fileID: 11400000, guid: 67cd25e5993f39d4b83fc1be1a244031, type: 2}
+  Animation: {fileID: 1897899345034374, guid: 075b5104e053cbd47bb14279738d6f05, type: 2}
+  BackgroundColorOnPool: {fileID: 11400000, guid: 9d27a35f6339f8e4ebb06a6fcac91d64,
+    type: 2}
+  Background: {fileID: 21300000, guid: a180ecd6f1a29e34694ec3144f23e09d, type: 3}
+  Id: 8
+  DefaultPower: 5
+  SoundOnPlay: {fileID: 8300000, guid: 10f0307536fb00e40a1d7d6b007a7ddb, type: 3}
+  TimeUntilToDie: -1
+  SpawnModelAnimation: {fileID: 11400000, guid: 79899c2245f4d5a49927bcc6f26aab2e,
+    type: 2}
+  m_Type: 44
+  m_Flavor: 117
