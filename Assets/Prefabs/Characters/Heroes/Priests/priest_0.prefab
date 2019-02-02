@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 143952257763149399}
   - component: {fileID: 4147192727352709267}
   m_Layer: 0
-  m_Name: priest
+  m_Name: priest_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2399a7cecfda6499709314feb18bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnEnable: 1
   renderers:
   - {fileID: 212888300505529126}
   - {fileID: 212262509577262616}
@@ -62,6 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2399a7cecfda6499709314feb18bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnEnable: 1
   renderers:
   - {fileID: 212800926001084284}
   color: {r: 0.6415094, g: 0.3633526, b: 0.105909556, a: 1}
@@ -77,6 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2399a7cecfda6499709314feb18bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnEnable: 1
   renderers:
   - {fileID: 212879102805680172}
   color: {r: 1, g: 1, b: 0, a: 1}
@@ -205,7 +208,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781693831675404}
   m_LocalRotation: {x: -0, y: -0, z: 0.33627352, w: 0.9417644}
-  m_LocalPosition: {x: -0.48, y: 0.45, z: -0.099999994}
+  m_LocalPosition: {x: -0.48, y: 0.45, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4569868660023164}

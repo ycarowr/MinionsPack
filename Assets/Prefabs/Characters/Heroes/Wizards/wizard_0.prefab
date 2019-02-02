@@ -125,7 +125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6648141968171670417}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3119995, y: 0.42499995, z: 0.94000006}
+  m_LocalPosition: {x: 0.312, y: 0.42499995, z: 0.94000006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6651897511850838221}
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 5772532959518049832}
   - component: {fileID: 6502059749075804567}
   m_Layer: 0
-  m_Name: wizard_purple (1)
+  m_Name: wizard_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,7 +226,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6648550732940853829}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.25, y: 2.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -246,6 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2399a7cecfda6499709314feb18bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnEnable: 1
   renderers:
   - {fileID: 6823147835859284307}
   - {fileID: 6823828763131803299}
@@ -262,6 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2399a7cecfda6499709314feb18bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnEnable: 1
   renderers:
   - {fileID: 6823176368584466649}
   color: {r: 0.8207547, g: 0.8207547, b: 0, a: 1}
@@ -277,6 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2399a7cecfda6499709314feb18bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnEnable: 1
   renderers:
   - {fileID: 6823720410198962065}
   color: {r: 0.5605536, g: 0.67342794, b: 0.9411765, a: 1}
@@ -292,6 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2399a7cecfda6499709314feb18bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnEnable: 1
   renderers:
   - {fileID: 6824426399869501197}
   color: {r: 0.7105985, g: 0, b: 0, a: 1}
@@ -307,6 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2399a7cecfda6499709314feb18bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnEnable: 1
   renderers:
   - {fileID: 6824493565176315687}
   color: {r: 1, g: 1, b: 1, a: 1}
@@ -788,7 +793,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6649492913973336785}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.07300048, y: -0.236, z: 0.5}
+  m_LocalPosition: {x: -0.073, y: -0.236, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6652107978410119693}

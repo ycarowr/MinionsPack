@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404745415991701635}
   m_LocalRotation: {x: -0, y: -0, z: 0.33627352, w: 0.9417644}
-  m_LocalPosition: {x: -0.48, y: 0.45, z: -0.099999994}
+  m_LocalPosition: {x: -0.48, y: 0.45, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8510442630888337194}
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 1477912655555789542}
   - component: {fileID: 8157914634642655619}
   m_Layer: 0
-  m_Name: priest_plane
+  m_Name: priest_plain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -534,6 +534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2399a7cecfda6499709314feb18bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyOnEnable: 1
   renderers:
   - {fileID: 1111206052943535657}
   - {fileID: 196284367018613867}
