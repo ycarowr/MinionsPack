@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &565974434810356434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 565974434810356444}
+  - component: {fileID: 6261661264421284686}
+  m_Layer: 0
+  m_Name: WizardsPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &565974434810356444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565974434810356434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -64.6, y: -0.09256551, z: -20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6261661264421284686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565974434810356434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b825a9a0c27d049990863a76b93608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDontDestroyOnLoad: 0
+  isSilent: 0
+  startSize: 10
+  modelsPooled:
+  - {fileID: 1698530399626794, guid: 51cd221638ccd6c4192588a3feeac255, type: 3}
+  - {fileID: 6648550732940853829, guid: 6c4b516293285fe40b8f14ec2f6e7aef, type: 3}
+  - {fileID: 8659296077517667917, guid: 1e0a13c8a96248f4587de6553f3186ab, type: 3}
+  - {fileID: 3326542005040502549, guid: 1e924dac783f41245b1f02c5539ecb0b, type: 3}
+  - {fileID: 1542417686417092, guid: 5f46c1fbb20e0d34ba31e82d8e025098, type: 3}
+  - {fileID: 1299337236553252, guid: 6518d144d0e5de742b3d1c3ab0f3655b, type: 3}
+  - {fileID: 506686718, guid: 66e9001c52a0459428cd31a5ab2a8d48, type: 3}
