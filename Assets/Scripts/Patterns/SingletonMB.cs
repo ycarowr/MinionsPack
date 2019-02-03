@@ -25,8 +25,11 @@ namespace ywr.Tools
 
         protected virtual void Awake()
         {
+            //multi thread lock
             lock (locker)
             {
+                // if null we set the instance to be this and mark the
+                // gameobject whether or not is destroyed on load
                 if (instance == null)
                 {
                     instance = this as T;
@@ -35,20 +38,23 @@ namespace ywr.Tools
                 }
                 else if ((instance as SingletonMB<T>) != this)
                 {
+                    //if not null we grab all possible objects of this type
                     var singletons = FindObjectsOfType(typeof(T));
+
                     if (singletons.Length > 1)
                     {
                         if (isSilent)
                         {
                             foreach (var duplicated in singletons)
                             {
-                                //if not this instance destroy it silently
+                                //if the singleton is silent, just destroy the sparing objects
                                 if (duplicated != instance)
                                     Destroy(duplicated);
                             }
                         }
                         else
                         {
+                            //if not silent, we raise an error with the names of the sparing objects
                             var singletonsNames = string.Empty;
                             foreach (var duplicated in singletons)
                                 singletonsNames += duplicated.name + ", ";

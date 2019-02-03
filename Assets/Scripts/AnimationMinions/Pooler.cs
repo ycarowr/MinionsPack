@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using ywr.Tools;
 
-public class Pooler<T> : SingletonMB<Pooler<T>> where T : MonoBehaviour
+public class Pooler : SingletonMB<Pooler> 
 {
     [Tooltip("How many objects will be created as soon as the game loads")] [SerializeField]
     private int startSize = 10;
@@ -19,13 +19,25 @@ public class Pooler<T> : SingletonMB<Pooler<T>> where T : MonoBehaviour
     private readonly Dictionary<GameObject, List<GameObject>> busyObjects =
         new Dictionary<GameObject, List<GameObject>>();
 
-    protected override void Awake()
+
+    /// <summary>
+    /// I am initializing it as soon as possible. You can move it to Awake or Start calls. It's up to you.
+    /// </summary>
+    private void OnEnable()
     {
-        base.Awake();
+        //avoiding execution when the game isn't playing
+        if (!Application.isPlaying)
+            return;
+
+        //initialize the pool system
         Initialize();
     }
 
 
+    /// <summary>
+    /// Here is the initialization of the pooler. All the models/prefabs which you need to pool have to be inside
+    /// the modelPooled array. They will be keys for the Lists inside the pool system.
+    /// </summary>
     private void Initialize()
     {
         foreach (GameObject model in modelsPooled)
@@ -49,8 +61,14 @@ public class Pooler<T> : SingletonMB<Pooler<T>> where T : MonoBehaviour
         }
     }
 
-
-    public GameObject Get(GameObject model)
+    /// <summary>
+    /// Here you can pool the prefab objects. Currently the key is a reference to the prefab that you need to get.
+    /// Although I haven't had problems with this approach, you can come up with a solution that performs better
+    /// using an enumeration as key.
+    /// </summary>
+    /// <param name="prefabModel"></param>
+    /// <returns></returns>
+    public GameObject Get(GameObject prefabModel)
     {
         GameObject pooledObj = null;
 
@@ -60,36 +78,43 @@ public class Pooler<T> : SingletonMB<Pooler<T>> where T : MonoBehaviour
         if (busyObjects == null)
             Debug.LogError("Nop! Busy objects list is not created yet!");
 
-        //if model is not contained inside the register
-        if (!poolAbleObjects.ContainsKey(model))
+        //if prefabModel is not contained inside the register
+        if (!poolAbleObjects.ContainsKey(prefabModel))
             return null;
 
         //try to grab the last element of the available objects
-        if (poolAbleObjects[model].Count > 0)
+        if (poolAbleObjects[prefabModel].Count > 0)
         {
-            var size = poolAbleObjects[model].Count;
-            pooledObj = poolAbleObjects[model][size - 1];
+            var size = poolAbleObjects[prefabModel].Count;
+            pooledObj = poolAbleObjects[prefabModel][size - 1];
         }
 
         if (pooledObj != null)
         {
             //remove the grabbed element from the pool
-            poolAbleObjects[model].Remove(pooledObj);
+            poolAbleObjects[prefabModel].Remove(pooledObj);
         }
         else
         {
             //otherwise create a new object
-            pooledObj = Instantiate(model, transform);
+            pooledObj = Instantiate(prefabModel, transform);
         }
 
         //add the pooled object to the used objects list
-        busyObjects[model].Add(pooledObj);
+        busyObjects[prefabModel].Add(pooledObj);
 
         pooledObj.SetActive(true);
+        OnPool(pooledObj);
         return pooledObj;
     }
 
-    public void ReleasePooledObject(GameObject model, GameObject pooledObj)
+    /// <summary>
+    /// Here you pool back objects that you no longer use. They are deactivated and 
+    /// stored back for future usage using the prefab model as key to get it back later on.
+    /// </summary>
+    /// <param name="prefabModel"></param>
+    /// <param name="pooledObj"></param>
+    public void ReleasePooledObject(GameObject prefabModel, GameObject pooledObj)
     {
         if (poolAbleObjects == null)
             Debug.LogError("Nop! PoolAble objects list is not created yet!");
@@ -98,9 +123,30 @@ public class Pooler<T> : SingletonMB<Pooler<T>> where T : MonoBehaviour
             Debug.LogError("Nop! Busy objects list is not created yet!");
 
         pooledObj.SetActive(false);
-        busyObjects[model].Remove(pooledObj);
-        poolAbleObjects[model].Add(pooledObj);
+        busyObjects[prefabModel].Remove(pooledObj);
+        poolAbleObjects[prefabModel].Add(pooledObj);
         pooledObj.transform.parent = transform;
         pooledObj.transform.localPosition = Vector3.zero;
+        OnRelease(pooledObj);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="prefabModel"></param>
+    private void OnPool(GameObject prefabModel)
+    {
+        // If you need to execute some code right BEFORE the object is pooled, you can do it here.
+        // Clean references or reset variables are very common cases.
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="prefabModel"></param>
+    private void OnRelease(GameObject prefabModel)
+    {
+        // If you need to execute some code right AFTER the object is released, you can do it here.
+        // Clean references or reset variables are very common cases.
     }
 }

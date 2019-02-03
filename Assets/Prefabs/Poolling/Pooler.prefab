@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &565974434810356434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 565974434810356444}
+  - component: {fileID: 6261661264421284686}
+  m_Layer: 0
+  m_Name: Pooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &565974434810356444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565974434810356434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -64.6, y: -0.09256551, z: -20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6261661264421284686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565974434810356434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce975a81a490b3f478f424fbc7804e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDontDestroyOnLoad: 0
+  isSilent: 0
+  startSize: 10
+  modelsPooled:
+  - {fileID: 1698530399626794, guid: 51cd221638ccd6c4192588a3feeac255, type: 3}
+  - {fileID: 6648550732940853829, guid: 6c4b516293285fe40b8f14ec2f6e7aef, type: 3}
+  - {fileID: 8659296077517667917, guid: 1e0a13c8a96248f4587de6553f3186ab, type: 3}
+  - {fileID: 3326542005040502549, guid: 1e924dac783f41245b1f02c5539ecb0b, type: 3}
+  - {fileID: 1542417686417092, guid: 5f46c1fbb20e0d34ba31e82d8e025098, type: 3}
+  - {fileID: 1299337236553252, guid: 6518d144d0e5de742b3d1c3ab0f3655b, type: 3}
+  - {fileID: 506686718, guid: 66e9001c52a0459428cd31a5ab2a8d48, type: 3}
+  - {fileID: 1951032721, guid: e810c5b97f77bc34fb65ea31e595f505, type: 3}
+  - {fileID: 1230621160066536, guid: df928024039112e4abe3e07ec73aa228, type: 3}
+  - {fileID: 124034881, guid: 2ba2821cabd0ed24b8a6d6aad894bfd0, type: 3}
+  - {fileID: 5686942027489618863, guid: 7ec414414c879dc4ab6b61d1ff9b46ac, type: 3}
+  - {fileID: 1344748423668146, guid: 109adb3a227ec0543b45eccfdf709013, type: 3}
+  - {fileID: 7899557093909941417, guid: 6259c61ef759e8347b5e3c39d2edf85c, type: 3}
+  - {fileID: 1281948874190077924, guid: bcac345ab8ec10a4a9e81c7cd340bf0a, type: 3}
+  - {fileID: 1704337851562524, guid: 125d193016df63148b73d292c220e53c, type: 3}
+  - {fileID: 1472855599542798, guid: 6fb3e19c7c78edb439d7950bdff21935, type: 3}
+  - {fileID: 1081359754656396, guid: 8973e2df42350444db8b38037c32cc5a, type: 3}
+  - {fileID: 1049389374395690, guid: 29a113e20b957e7489320b1533172926, type: 3}
+  - {fileID: 1373471189, guid: ee0ed2d5791dbc9409ceb9001c0e2d8c, type: 3}
+  - {fileID: 1869224598121226, guid: 4f504b5eacfd53f4491e285ac5d72ae9, type: 3}
+  - {fileID: 1157171712440886829, guid: 15cd4e1af7679f34e903a44215f3d976, type: 3}
+  - {fileID: 5534999140863455124, guid: 22014db23e5167940b5a2f63a84ce25a, type: 3}
+  - {fileID: 1446788442086260, guid: 4114da0cf3cd3db4e867d905065e3dfc, type: 3}
+  - {fileID: 7798866728037070302, guid: cb0d02b82a6dbfa4597efff5c4c2d56d, type: 3}
+  - {fileID: 280560498090469887, guid: d07a43f70f13c674e907381b65581dce, type: 3}
+  - {fileID: 1446597844710416, guid: 902b7b3eb1eed7d4ab79f7cddedcc066, type: 3}
+  - {fileID: 1897899345034374, guid: d927cefdbfe02ad409c84397cd187e94, type: 3}
+  - {fileID: 1897899345034374, guid: 075b5104e053cbd47bb14279738d6f05, type: 3}
+  - {fileID: 1195793216843880, guid: adfc648a03de6614b9006f8af2f5bd61, type: 3}
+  - {fileID: 1641030356895378142, guid: 0eee61db0a7638845bcc3094ffcb2cbf, type: 3}
+  - {fileID: 1596506161106348616, guid: 357295103d6d4bc41b5d71e9b9331774, type: 3}
+  - {fileID: 2834657500766748697, guid: 46b50541f760d08438f8f1f10400742e, type: 3}
+  - {fileID: 6510635350409594515, guid: 4c2bff00ffa1cf64bbabb7b0390dbb02, type: 3}

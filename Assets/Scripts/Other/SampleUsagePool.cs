@@ -13,7 +13,7 @@ public class SampleUsagePool : MonoBehaviour
         var distance = 1;
         foreach(var model in wizards)
         {
-            var pooled = WizardsPool.Instance.Get(model);
+            var pooled = Pooler.Instance.Get(model);
             pooled.transform.position = new Vector3(distance, 0, 0);
             pooled.transform.SetParent(transform);
             distance += 2;
@@ -22,7 +22,7 @@ public class SampleUsagePool : MonoBehaviour
         distance = 1;
         foreach (var model in thieves)
         {
-            var pooled = ThievesPool.Instance.Get(model);
+            var pooled = Pooler.Instance.Get(model);
             pooled.transform.position = new Vector3(distance, 2, 0);
             pooled.transform.SetParent(transform);
             distance += 2;
