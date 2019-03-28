@@ -1,5 +1,5 @@
 # MinionsPack
-I am making all the character's assets from my previous game available. Hope they can be useful for you. You can check it ![here](https://ycarowr.itch.io/minions-unity-pack) too.
+I am making all the character's assets from my previous game available. Hope they can be useful for you. You can check it [here](https://ycarowr.itch.io/minions-unity-pack) too.
 
 I made all the animations using the Unity Mecanim System, it's very easy to edit and customize parts of the body of all the characters. However, it's very attached to Unity and I can't make it available outside the Unity3d environment.
 
